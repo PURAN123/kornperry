@@ -1,0 +1,54 @@
+<template>
+    <div class="text-white text-center flex flex-col items-center font-semibold bg-primary px-5 max-w-7xl mx-auto">
+        <div class="hero-section">
+            <p class="text-xl">Your organization is full of potential</p>
+            <h1 class="text-textPrimary font-bold text-5xl mt-5">WE'RE HERE TO UNLEASH IT</h1>
+
+            <p class="py-10">
+                Instinctly curious, we are uniquely positioned as the only organizational consulting firm focused on
+                transforming strategy, organization and talent. We combine our capabilities in Organizational Strategy,
+                Assessment and Succession, Talent Management, Leadership Development, and Total Rewards to drive
+                performance through your talent, improve your business strategy so we can help you.
+            </p>
+        </div>
+
+        <div class="video-section">
+            <div class="video-container">
+                <video class="video-player" controls>
+                    <source src="/plus-video.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+
+        <div class="py-10">
+            <h2 class="py-10 text-3xl font-semibold px-5 text-textPrimary">What business challenge are you looking to
+                solve?</h2>
+
+            <div class="flex justify-start items-center gap-6 flex-wrap">
+                <button class="border border-textPrimary px-4">
+                    Driving organizational change
+                </button>
+                <button class="border border-textPrimary px-4">Managing talent costs</button>
+                <button class="border border-textPrimary px-4">Improving sales results</button>
+                <button class="border border-textPrimary px-4">Scaling recruitment</button>
+                <button class="border border-textPrimary px-4">Identifying and developing leaders</button>
+                <button class="border border-textPrimary px-4">Leveraging talent data</button>
+                <button class="border border-textPrimary px-4">My next career move</button>
+            </div>
+
+            <div class="py-10 flex justify-center items-center">
+                <div class="max-w-80 flex justify-center items-center ">
+                    <input type="text" placeholder="I need to identify future leaders..."
+                        class="w-full px-4 py-1.5 rounded-l-md text-primary focus:outline-none focus:ring-0" />
+                    <button class="bg-white text-primary px-3 py-2 rounded-r-md ">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>
