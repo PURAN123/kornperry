@@ -1,9 +1,9 @@
 <template>
     <div  class="bg-formBg">
-    <CommonHeader classNames="sticky top-0 z-50 backdrop-blur-md bg-white/30" />
+    <CommonHeader classNames="sticky top-0 z-50 backdrop-blur-md bg-white/30" v-if="$route.path == '/contact'" />
   <div class=" p-8 md:p-16">
 
-    <div class="max-w-3xl mx-auto">
+    <div class="mx-auto">
       <h2 class="text-4xl md:text-5xl font-bold text-textPrimary mb-12">
         Change starts with a conversation
       </h2>
@@ -106,7 +106,7 @@
               required
             >
               <option disabled value="">Select...</option>
-              <option v-for="country in countries" :key="country" :value="country">
+              <option v-for="country in allCountries" :key="country" :value="country">
                 {{ country }}
               </option>
             </select>
@@ -143,7 +143,7 @@
           </div>
           <div class="ml-3 text-sm">
             <label for="consent" class="text-white">
-              Yes, I Would Like To Receive Regular Updates On Thought Leadership, Industry Insights And Upcoming Events From Korn Ferry. I Understand That I May Withdraw My Consent At Any Time. Review Korn Ferry's Privacy Policy <a href="#" class="text-textPrimary underline">Here</a>.
+              Yes, I Would Like To Receive Regular Updates On Thought Leadership, Industry Insights And Upcoming Events From Hire Multiverse. I Understand That I May Withdraw My Consent At Any Time. Review Hire Multiverse's Privacy Policy <a href="#" class="text-textPrimary underline">Here</a>.
             </label>
           </div>
         </div>
@@ -166,25 +166,13 @@
 <script setup>
 import { ref } from 'vue';
 
-const countries = [
-  'United States',
-  'United Kingdom',
-  'Canada',
-  'Australia',
-  'Germany',
-  'France',
-  'Japan',
-  'China',
-  'India',
-  // Add more countries as needed
-];
-
 const helpOptions = [
-  'General Inquiry',
-  'Business Consulting',
-  'Career Development',
+  'Job candidate seeking to be placed by Korn Ferry',
+  'Interim Executives & Professionals',
   'Executive Search',
-  'Leadership Development',
+  'Board & CEO Services',
+  'Professional Search',
+  'Recruitment Process Outsourcing (RPO)',
   // Add more options as needed
 ];
 
@@ -199,6 +187,203 @@ const form = ref({
   helpType: '',
   consent: false
 });
+
+
+const allCountries = [
+  'Afghanistan',
+  'Albania',
+  'Algeria', 
+  'Andorra',
+  'Angola',
+  'Antigua & Barbuda',
+  'Argentina',
+  'Armenia', 
+  'Australia',
+  'Austria',
+  'Azerbaijan',
+  'Bahamas',
+  'Bahrain',
+  'Bangladesh',
+  'Barbados',
+  'Belarus',
+  'Belgium',
+  'Belize',
+  'Benin',
+  'Bhutan',
+  'Bolivia',
+  'Bosnia & Herzegovina',
+  'Botswana',
+  'Brazil',
+  'Brunei',
+  'Bulgaria',
+  'Burkina Faso',
+  'Burundi',
+  'Cambodia',
+  'Cameroon',
+  'Canada',
+  'Cape Verde',
+  'Central African Republic',
+  'Chad',
+  'Chile',
+  'China',
+  'Colombia',
+  'Comoros',
+  'Congo',
+  'Congo Democratic Republic',
+  'Costa Rica',
+  "Cote d'Ivoire",
+  'Croatia',
+  'Cyprus',
+  'Czech Republic',
+  'Denmark',
+  'Djibouti',
+  'Dominica',
+  'Dominican Republic',
+  'East Timor',
+  'Ecuador',
+  'Egypt',
+  'El Salvador',
+  'Equatorial Guinea',
+  'Eritrea',
+  'Estonia',
+  'Ethiopia',
+  'Fiji',
+  'Finland',
+  'France',
+  'Gabon',
+  'Gambia',
+  'Georgia',
+  'Germany',
+  'Ghana',
+  'Greece',
+  'Grenada',
+  'Guatemala',
+  'Guinea',
+  'Guinea-Bissau',
+  'Guyana',
+  'Haiti',
+  'Honduras',
+  'Hungary',
+  'Iceland',
+  'India',
+  'Indonesia',
+  'Iraq',
+  'Ireland',
+  'Israel',
+  'Italy',
+  'Jamaica',
+  'Japan',
+  'Jordan',
+  'Kazakhstan',
+  'Kenya',
+  'Kiribati',
+  'Korea South',
+  'Kosovo',
+  'Kuwait',
+  'Kyrgyzstan',
+  'Laos',
+  'Latvia',
+  'Lebanon',
+  'Lesotho',
+  'Liberia',
+  'Libya',
+  'Liechtenstein',
+  'Lithuania',
+  'Luxembourg',
+  'Macedonia',
+  'Madagascar',
+  'Malawi',
+  'Malaysia',
+  'Maldives',
+  'Mali',
+  'Malta',
+  'Marshall Islands',
+  'Mauritania',
+  'Mauritius',
+  'Mexico',
+  'Micronesia',
+  'Moldova',
+  'Monaco',
+  'Mongolia',
+  'Montenegro',
+  'Morocco',
+  'Mozambique',
+  'Myanmar (Burma)',
+  'Namibia',
+  'Nauru',
+  'Nepal',
+  'New Zealand',
+  'Nicaragua',
+  'Niger',
+  'Nigeria',
+  'Norway',
+  'Oman',
+  'Pakistan',
+  'Palau',
+  'Palestinian State*',
+  'Panama',
+  'Papua New Guinea',
+  'Paraguay',
+  'Peru',
+  'Poland',
+  'Portugal',
+  'Qatar',
+  'Romania',
+  'Rwanda',
+  'Samoa',
+  'San Marino',
+  'Sao Tome & Principe',
+  'Saudi Arabia',
+  'Senegal',
+  'Serbia',
+  'Seychelles',
+  'Sierra Leone',
+  'Singapore',
+  'Slovakia',
+  'Slovenia',
+  'Solomon Islands',
+  'Somalia',
+  'South Africa',
+  'South Sudan',
+  'Spain',
+  'Sri Lanka',
+  'St. Kitts & Nevis',
+  'St. Lucia',
+  'St. Vincent & The Grenadines',
+  'Sudan',
+  'Suriname',
+  'Swaziland',
+  'Sweden',
+  'Switzerland',
+  'Tajikistan',
+  'Tanzania',
+  'Thailand',
+  'The Netherlands',
+  'The Philippines',
+  'Togo',
+  'Tonga',
+  'Trinidad & Tobago',
+  'Tunisia',
+  'Turkey',
+  'Turkmenistan',
+  'Tuvalu',
+  'Uganda',
+  'Ukraine',
+  'United Arab Emirates',
+  'United Kingdom',
+  'United States of America',
+  'Uruguay',
+  'Uzbekistan',
+  'Vanuatu',
+  'Vatican City (Holy See)',
+  'Venezuela',
+  'Vietnam',
+  'Yemen',
+  'Zambia',
+  'Zimbabwe'
+];
+
+
 
 const submitForm = () => {
   // Add form submission logic here

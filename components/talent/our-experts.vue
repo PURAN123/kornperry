@@ -57,7 +57,7 @@ const expertsRow1 = [
   },
   {
     name: 'Bob Carlson',
-    title: 'President, Korn Ferry Executive Interim, North America',
+    title: 'President, Hire Multiverse Executive Interim, North America',
     image: '/images/talent/expert2.webp'
   },
   {
@@ -75,12 +75,12 @@ const expertsRow1 = [
 const expertsRow2 = [
   {
     name: 'Courtney Cook',
-    title: 'Senior Vice President of Global Client Solutions, Korn Ferry RPO',
+    title: 'Senior Vice President of Global Client Solutions, Hire Multiverse RPO',
     image: '/images/talent/expert5.webp'
   },
   {
     name: 'Nick Gust',
-    title: 'COO, Salo, a Korn Ferry Company',
+    title: 'COO, Salo, a Hire Multiverse Company',
     image: '/images/talent/expert6.webp'
   }
 ]

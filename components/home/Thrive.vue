@@ -57,7 +57,7 @@
           <p class="text-sm leading-relaxed">
             3 in every 4 of Fortune's <br />
             best companies to work for <br />
-            are Korn Ferry clients
+            are Hire Multiverse clients
           </p>
         </div>
 

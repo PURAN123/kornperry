@@ -1,5 +1,5 @@
 <template>
-    <header :class="classNames">
+    <header :class="classNames" class="py-2">
         <!-- Hamburger button for md and below -->
         <button @click="drawerOpen = !drawerOpen" class="md:hidden p-2 focus:outline-none">
             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -44,9 +44,9 @@ defineProps({
 
 const navMenus = ref([
     { name: 'Home', path: '/' },
+    { name: 'About', path: '/about' },
     { name: 'Solution', path: '/talent-acquisition' },
     // { name: 'Role', path: '/role' },
-    { name: 'About', path: '/about' },
     { name: 'Contact', path: '/contact' }
 ])
 

@@ -19,7 +19,7 @@
     <!-- Services Section -->
     <div class="max-w-4xl mx-auto text-center">
       <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Our talent acquisition services</h2>
-      <p class="text-lg text-white mb-12">Korn Ferry talent acquisition specialists work with you to solve your most pressing needs at every stage of the talent journey.</p>
+      <p class="text-lg text-white mb-12">Hire Multiverse talent acquisition specialists work with you to solve your most pressing needs at every stage of the talent journey.</p>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
         <div class="bg-primaryDark rounded-lg p-8 flex flex-col items-center shadow-md">
           <img src="https://img.icons8.com/ios-filled/100/05c690/manager--v1.png" alt="Executive Search" class="w-16 h-16 mb-4"/>

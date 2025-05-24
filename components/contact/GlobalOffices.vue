@@ -24,7 +24,7 @@
           href="#" 
           class="inline-flex items-center text-[#7BC143] hover:text-[#69A439] transition-colors duration-300"
         >
-          Find a Korn Ferry office
+          Find a Hire Multiverse office
           <svg 
             class="w-4 h-4 ml-2" 
             fill="none" 

@@ -26,7 +26,7 @@
         </p>
 
         <p>
-          You need a partner with experience in every aspect of the talent acquisition process. You need Korn Ferry.
+          You need a partner with experience in every aspect of the talent acquisition process. You need Hire Multiverse.
         </p>
 
         <p>

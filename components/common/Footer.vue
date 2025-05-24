@@ -6,7 +6,7 @@
       <div class="flex flex-col sm:flex-row justify-between items-center mb-8 border-b border-gray-700 pb-4">
         <div class="flex-shrink-0 mb-4 sm:mb-0">
           <!-- Text logo as fallback -->
-          <div class="text-white font-bold text-xl">KORN PERRY</div>
+          <div class="text-white font-bold text-xl">Hire Multiverse</div>
         </div>
         <div class="flex items-center space-x-4">
           <!-- LinkedIn -->
@@ -73,12 +73,12 @@
         <div class="col-span-1">
           <h3 class="text-lg font-bold mb-4">Products</h3>
           <ul class="space-y-2">
-            <li><a href="#" class="hover:text-textPrimary">Korn Ferry Advance</a></li>
+            <li><a href="#" class="hover:text-textPrimary">Hire Multiverse Advance</a></li>
             <li><a href="#" class="hover:text-textPrimary">Talent Journey Explorer</a></li>
-            <li><a href="#" class="hover:text-textPrimary">Korn Ferry Assess</a></li>
-            <li><a href="#" class="hover:text-textPrimary">Korn Ferry Listen</a></li>
-            <li><a href="#" class="hover:text-textPrimary">Korn Ferry Pay</a></li>
-            <li><a href="#" class="hover:text-textPrimary">Korn Ferry Sell</a></li>
+            <li><a href="#" class="hover:text-textPrimary">Hire Multiverse Assess</a></li>
+            <li><a href="#" class="hover:text-textPrimary">Hire Multiverse Listen</a></li>
+            <li><a href="#" class="hover:text-textPrimary">Hire Multiverse Pay</a></li>
+            <li><a href="#" class="hover:text-textPrimary">Hire Multiverse Sell</a></li>
           </ul>
         </div>
 
@@ -120,7 +120,7 @@
           <ul class="space-y-2">
             <li><a href="#" class="hover:text-textPrimary">Work with our Clients</a></li>
             <li><a href="#" class="hover:text-textPrimary">Advance your Career</a></li>
-            <li><a href="#" class="hover:text-textPrimary">Join Korn Ferry</a></li>
+            <li><a href="#" class="hover:text-textPrimary">Join Hire Multiverse</a></li>
             <li><a href="#" class="hover:text-textPrimary">Find an office</a></li>
             <li><a href="#" class="hover:text-textPrimary">Business Support</a></li>
             <li><a href="#" class="hover:text-textPrimary">EMEA Support</a></li>
@@ -145,7 +145,7 @@
       <div class="container mx-auto px-4">
         <div class="flex flex-col md:flex-row justify-between items-center text-sm">
           <div class="mb-4 md:mb-0 text-center md:text-left">
-            &copy; 2023 Korn Ferry. All rights reserved.
+            &copy; 2023 Hire Multiverse. All rights reserved.
           </div>
           <div class="flex flex-wrap justify-center md:justify-end gap-x-4 gap-y-2">
             <a href="#" class="hover:text-textPrimary">Contact</a>

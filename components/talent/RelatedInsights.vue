@@ -12,7 +12,7 @@
               TALENT RECRUITMENT
             </div>
             <h3 class="text-lg font-semibold text-gray-900 mb-3">Beyond RPO: Elevating Your Talent Acquisition Strategy</h3>
-            <p class="text-sm text-gray-600">With Korn Ferry, you get more than talent acquisition: you get a total talent partner who elevates your TA...</p>
+            <p class="text-sm text-gray-600">With Hire Multiverse, you get more than talent acquisition: you get a total talent partner who elevates your TA...</p>
           </div>
         </div>
 

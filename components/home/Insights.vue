@@ -12,9 +12,9 @@
             </p>
         </div>
 
-        <div class="video-section">
+        <div class="video-section w-full">
             <div class="video-container">
-                <video class="video-player" controls>
+                <video class="video-player w-full" controls>
                     <source src="/plus-video.mp4" type="video/mp4">
                 </video>
             </div>

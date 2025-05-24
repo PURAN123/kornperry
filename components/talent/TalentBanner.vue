@@ -1,29 +1,71 @@
 <template>
-  <div class="relative h-[500px] overflow-hidden">
-    <!-- Background Image -->
-    <CommonHeader classNames="sticky top-0 z-50 backdrop-blur-md bg-white/30" />
-    <div class="absolute inset-0">
-      <img src="/images/talent/girl.webp" alt="Talent Acquisition" class="w-full h-full object-cover" />
-      <div class="absolute inset-0 bg-gradient-to-r from-green-900/80 to-transparent"></div>
-    </div>
-    
-    <!-- Content -->
-    <div class="relative z-10 flex flex-col justify-center h-full max-w-2xl px-8 md:px-16">
-      <p class="text-lg text-green-400 font-medium mb-2">Talent Acquisition Services</p>
-      <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-8">
-        We consult clients at every stage of the talent journey
-      </h1>
-      <div>
-        <a href="#contact" class="inline-block bg-green-600 hover:bg-green-700 text-white font-medium py-3 px-6 rounded-md transition-colors duration-300">
-          Discuss your needs
-        </a>
-      </div>
-    </div>
-  </div>
+    <section class="relative min-h-[500px] lg:min-h-[600px] w-full overflow-hidden">
+        <CommonHeader classNames="sticky top-0 z-50 backdrop-blur-sm bg-white/30" />
+
+        <div class="relative flex flex-col-reverse md:flex-row max-w-7xl mx-auto">
+           
+            <div class="w-full md:w-1/2 relative z-10  mx-auto px-4 sm:px-6 lg:px-8 h-full py-5">
+                <div class="flex flex-col justify-center md:h-[500px] lg:h-[600px] max-w-2xl">
+                    <span class="inline-block text-lg sm:text-xl text-green-400 font-medium mb-3 animate-fade-in">
+                        Talent Acquisition Services
+                    </span>
+
+                    <h1
+                        class="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold mb-8 leading-tight animate-fade-in-up">
+                        We consult clients at every stage of the talent journey
+                    </h1>
+
+                    <div class="animate-fade-in-up">
+                        <a href="#contact"
+                            class="inline-flex items-center px-6 py-3 text-base sm:text-lg font-medium bg-green-600 rounded-lg hover:bg-green-700 focus:ring-4 focus:ring-green-500/50 focus:outline-none transition-all duration-300 ease-in-out transform hover:scale-105">
+                            Discuss your needs
+                        </a>
+                    </div>
+                </div>
+            </div> 
+            <div class="w-full md:w-1/2">   
+            <img src="/images/talent/girl.webp" alt="Professional consultant in a business setting"
+                class="w-full h-full object-cover" loading="eager" />
+            </div>
+        </div>
+
+    </section>
 </template>
 
 <script>
 export default {
-  name: 'TalentBanner'
+    name: 'TalentBanner'
 }
-</script> 
+</script>
+
+<style scoped>
+.animate-fade-in {
+    animation: fadeIn 0.8s ease-in;
+}
+
+.animate-fade-in-up {
+    animation: fadeInUp 1s ease-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+</style>

@@ -1,5 +1,5 @@
 <template>
-    <div class=" px-4">
+    <div>
         <!-- <CommonHeader /> -->
         <div class="">
             <slot />

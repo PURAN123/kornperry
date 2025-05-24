@@ -44,7 +44,7 @@ const faqItems = [
     },
     {
         title: "What are the steps of your talent acquisition process?",
-        content: `Korn Ferry’s talent acquisition services recommends following our “CARE” model as a proven talent acquisition process. This model ensures that every candidate experience is fair, consistent and engaging. This model consists of four steps:
+        content: `Hire Multiverse’s talent acquisition services recommends following our “CARE” model as a proven talent acquisition process. This model ensures that every candidate experience is fair, consistent and engaging. This model consists of four steps:
 
         1. Configure your talent acquisition machine: Caring for candidates means you need the right people, processes and technology on your talent acquisition team. It ensures you have the right members on your team with the right skills, that those team members are doing the right work and that you’ve given your team the tools and technology they need to make their job less manual and more efficient.
 
