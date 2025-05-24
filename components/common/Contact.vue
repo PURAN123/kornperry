@@ -136,6 +136,7 @@
           <div class="flex items-center h-5">
             <input
               id="consent"
+              required
               type="checkbox"
               v-model="form.consent"
               class="focus:ring-textPrimary h-4 w-4 text-textPrimary border-gray-300 rounded"
@@ -385,10 +386,39 @@ const allCountries = [
 
 
 
-const submitForm = () => {
-  // Add form submission logic here
-  console.log('Form submitted:', form.value);
-  // You might want to make an API call here
+const submitForm = async () => {
+  try {
+    const response = await fetch('/api/contact', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(form.value)
+    });
+    
+    const result = await response.json();
+    
+    if (result.success) {
+      alert('Thank you for your submission! We will contact you soon.');
+      // Reset form
+      form.value = {
+        firstName: '',
+        lastName: '',
+        company: '',
+        jobTitle: '',
+        email: '',
+        phone: '',
+        country: '',
+        helpType: '',
+        consent: false
+      };
+    } else {
+      alert('Failed to send message. Please try again later.');
+    }
+  } catch (error) {
+    console.error('Error submitting form:', error);
+    alert('An error occurred. Please try again later.');
+  }
 };
 </script>
 
