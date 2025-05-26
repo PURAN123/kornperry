@@ -25,7 +25,7 @@
 
 
                 <!-- Timeline Description -->
-                <div class=" text-center mt-12 max-w-3xl space-y-4">
+                <div class=" text-center mt-12 max-w-3xl space-y-4 text-xl">
                     <p>
                         Born from the frustration of cookie-cutter hiring and robotic processes, our story began with a
                         bold
@@ -149,15 +149,15 @@
 
 
             <!-- banner section -->
-            <div class="bg-white py-16">
+            <div class="bg-white">
                 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div class="flex flex-col items-center">
                         <div class="relative w-full max-w-2xl mx-auto">
-                            <h2 class="text-6xl font-bold text-textPrimary text-center">1969</h2>
-                            <h3 class="text-2xl font-semibold text-center mt-2">Hire Multiverse's beginnings</h3>
+                            <h2 class="text-6xl font-bold text-textPrimary text-center">2023</h2>
+                            <h3 class="text-3xl font-semibold text-center mt-2">Hire Multiverse's beginnings</h3>
                         </div>
                     </div>
-                    <div class="flex flex-col md:flex-row items-center justify-between mt-16 gap-12">
+                    <div class="flex flex-col md:flex-row items-center justify-between mt-16 gap-12 text-xl">
                         <!-- Left side with text -->
                         <div class="w-full md:w-1/2 space-y-6">
                             <p class="text-gray-600 font-medium">

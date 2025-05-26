@@ -13,8 +13,8 @@
                         class="text-[3rem] leading-[3.5rem] sm:text-[3rem] sm:leading-[3.5rem] lg:text-[4rem] lg:leading-[4.5rem] 2xl:text-[8rem] xl:leading-[9rem] font-semibold text-white font-bold">
                         Empowering Businesses </h1>
                     <p class="text-2xl font-semibold text-white px-20 mt-10">to reach their full potential. It always starts with people.</p>
-                    <div class="w-auto mt-4">
-                        <button type="button" class="capitalize bg-white text-primary px-4 py-1 rounded-sm font-semibold" @click="navigateTo('/contact')">
+                    <div class="w-auto mt-7">
+                        <button type="button" class="capitalize bg-white text-primary px-4 py-1 rounded-full font-semibold" @click="navigateTo('/contact')">
                             How can we help you?
                         </button>
                     </div>
