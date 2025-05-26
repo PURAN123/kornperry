@@ -31,8 +31,8 @@ const cardData = [
     },
     {
         title: "Press release",
-        header: "Build on work days",
-        text: "Brand new app streamline talent acquisition and talenet management"
+        header: "Latest News",
+        text: "Company announcements and updates"
     },
 
 
