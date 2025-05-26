@@ -3,7 +3,7 @@
         <!-- Banner Section -->
         <section
             class="banner-section relative h-auto overflow-hidden min-h-[500px] before:content-[''] before:absolute before:inset-0 before:bg-black before:opacity-50">
-            <CommonHeader classNames="sticky top-0 z-50 backdrop-blur-md bg-white/30" />
+            <CommonHeader classNames="sticky top-0 z-50 text-white bg-transparent" />
 
             <!-- Content -->
             <div
@@ -12,8 +12,8 @@
                     <h6 class="text-xl mb-4 font-medium tracking-wide">ABOUT</h6>
                     <h1 class="text-6xl font-bold my-8">OUR STORY</h1>
                     <div class="text-2xl space-y-2 font-semibold">
-                        <p>History provides perspective.</p>
-                        <p>Future inspires opportunity.</p>
+                        <p>In 2023, we didn't just start a recruitment consultancy — we started a movement.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -25,56 +25,82 @@
 
 
                 <!-- Timeline Description -->
-                <div class=" text-center mt-12 max-w-3xl">
-                    <p class="text-lg leading-relaxed">
-                        Today, from being in a global organization operating from strategic locations together
-                        cutting-edge talent to
-                        being a trusted partner for our clients, we have come a long way. With our deep industry
-                        expertise and
-                        capabilities, we cannot but admire at the powerful impact we create here. We not only
-                        extended
-                        our reach but also our commitment to delivering excellence.
+                <div class=" text-center mt-12 max-w-3xl space-y-4">
+                    <p>
+                        Born from the frustration of cookie-cutter hiring and robotic processes, our story began with a
+                        bold
+                        question:
+                        "What if recruitment could be human again?"
+
+
+                        At a time when AI and automation dominate inboxes, we chose a different route — people-first
+                        hiring.
+                        We built our consultancy on the belief that talent isn't just a resume; it's potential, passion,
+                        and
+                        personality.
                     </p>
-                    <p class="text-lg leading-relaxed mt-4">
-                        We set out not only to place fine executives but also to partner with like-minded
-                        organizations to
-                        help them find talented leaders functioning at complex and crucial decision levels. This
-                        journey of
-                        continuous evolution reflects our commitment to responding to changes worldwide through
-                        leading-edge and thought-laden solutions.
+
+
+                    <p> With years of experience in high-volume hiring, start-up agility, and enterprise precision,
+                        we've
+                        turned hiring into a craft. Whether you're a growing startup or a scaling enterprise, we don't
+                        just
+                        find people — we find your people.
+
                     </p>
-                </div> <!-- Timeline Items -->
-                <div class="flex flex-row justify-between w-full max-w-4xl mt-12">
-                    <!-- Today-2015 -->
+                    <p>
+                        From tech wizards to sales rainmakers, from design minds to strategic leaders — we've placed
+                        them
+                        all. But what makes us truly different is our obsession with:
+                    <ul>
+                        <li>Culture-fit over checkbox-fit</li>
+                        <li>Speed without compromise</li>
+                        <li>Candidate experience that mirrors your brand</li>
+                    </ul>
+                    </p>
+                    <p>
+                        We've helped companies cut time-to-hire by 30%, boost offer conversion, and build pipelines that
+                        don't just fill roles — they future-proof your business.
+
+                        At our core, we aren't just recruiters.
+                        We're matchmakers, storytellers, brand custodians, and business enablers.
+
+                        Because hiring isn't just a function.
+                        It's the heartbeat of your company.
+                        And we're here to make sure it beats stronger, smarter, and faster.
+
+                        Would you like to add your company name, tagline, or specific industry focus so I can tailor
+                        this even further?
+                    </p>
+
+                </div>
+                 <!-- Timeline Items -->
+                <!-- <div class="flex flex-row justify-between w-full max-w-4xl mt-12">
+                
                     <div class="flex flex-col items-center">
                         <div class="bg-primary text-white px-4 py-2 rounded">TODAY-2015</div>
                     </div>
 
-                    <!-- 2015-2009 -->
                     <div class="flex flex-col items-center">
                         <div class="bg-primary text-white px-4 py-2 rounded">2015-2009</div>
                     </div>
 
-                    <!-- 2008-1997 -->
                     <div class="flex flex-col items-center">
                         <div class="bg-primary text-white px-4 py-2 rounded">2008-1997</div>
                     </div>
 
-                    <!-- 1996 -->
                     <div class="flex flex-col items-center">
                         <div class="bg-primary text-white px-4 py-2 rounded">1996</div>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
 
         <!-- Our Team Section -->
         <section class="timeline-modern py-16 px-4 md:px-8 max-w-6xl mx-auto">
-            <div class="relative">
-                <!-- Vertical Line -->
+            <!-- <div class="relative">
                 <div class="absolute left-1/2 transform -translate-x-1/2 h-full w-0.5 bg-primary"></div>
 
-                <!-- Timeline Items -->
                 <div class="space-y-10">
                     <div v-for="(item, index) in timelineItems" :key="item.year">
                         <div class="relative"
@@ -99,7 +125,6 @@
                                 </div>
                             </div>
 
-                            <!-- 2023 Item -->
                             <div class="relative flex items-center justify-between" v-else
                                 style="background-color: rgba(255, 255, 255, 0.8);">
                                 <div class="w-5/12 flex justify-end">
@@ -120,7 +145,7 @@
 
                     </div>
                 </div>
-            </div>
+            </div> -->
 
 
             <!-- banner section -->
@@ -136,25 +161,22 @@
                         <!-- Left side with text -->
                         <div class="w-full md:w-1/2 space-y-6">
                             <p class="text-gray-600 font-medium">
-                                Hire Multiverse was founded in Los Angeles by Lester B. Korn and Richard M. Ferry
+                                Our company emerged as a disruptive force in talent acquisition when two visionary entrepreneurs with a shared dream launched their groundbreaking venture.
                             </p>
                             <p class="text-gray-600">
-                                Hire Multiverse started as a small office in Century City Los Angeles. One phone,
-                                one assistant, and a vision. From those humble beginnings, we've never lost sight of
-                                everything Hire Multiverse International came to being about.
+                                Our genesis story began in a lean startup environment. Armed with minimal infrastructure but maximum ambition - just one phone line, one executive assistant, and an innovative mindset. This bootstrapped beginning shaped our DNA, and today, our global organization continues to embody that entrepreneurial spirit.
                             </p>
                             <p class="text-gray-600">
-                                From the beginning, Hire Multiverse had a strong vision of looking to what was
-                                possible.
+                                Since day one, our north star has been innovation and transformation in the talent ecosystem. We've consistently pushed the boundaries of what's achievable in human capital solutions.
                             </p>
                         </div>
 
                         <!-- Right side with images -->
                         <div class="w-full md:w-1/2 relative h-[400px]">
-                            <img src="/images/about/photo1.avif" alt="Historical photo 1"
+                            <img src="/images/home/1.jpg" alt="Historical photo 1"
                                 class="w-72 h-72 rounded-lg shadow-lg absolute left-0 top-0 z-10" data-aos="fade-up" />
-                            <img src="/images/about/photo2.avif" alt="Historical photo 2"
-                                class="w-72 h-72 rounded-lg shadow-lg absolute right-0 bottom-0" data-aos="fade-up"
+                            <img src="/images/home/3.jpg" alt="Historical photo 2"
+                                class="w-72 h-72 rounded-lg shadow-lg absolute right-0 bottom-0 object-cover" data-aos="fade-up"
                                 data-aos-delay="200" />
                         </div>
                     </div>
@@ -185,7 +207,7 @@ const timelineItems = [
     },
     {
         year: '2019',
-        description: 'Hire Multiverse Acquires TwentyEighty Companies. The combination brought a world-class portfolio of learning, development, and performance improvement offerings and expertise to Hire Multiverse, bolstering the firm’s substantial leadership development capabilities'
+        description: 'Hire Multiverse Acquires TwentyEighty Companies. The combination brought a world-class portfolio of learning, development, and performance improvement offerings and expertise to Hire Multiverse, bolstering the firm\'s substantial leadership development capabilities'
     },
     {
         year: '2019',
@@ -209,10 +231,8 @@ const timelineItems = [
     },
     {
         year: '1998',
-        description: 'Futurestep, Hire Multiverse’s internet-based recruitment service targeted at professionals who were not the typical target of executive recruiting, is launched.'
-    },
-
-
+        description: 'Futurestep, Hire Multiverse\'s internet-based recruitment service targeted at professionals who were not the typical target of executive recruiting, is launched.'
+    }
 ]   
 </script>
 

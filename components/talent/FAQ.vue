@@ -3,7 +3,7 @@
     <h2 class="text-5xl font-light text-teal-700 text-center mb-12">How we can help</h2>
     
     <p class="text-lg text-center mb-16 max-w-4xl mx-auto">
-      Our talent acquisition specialists will help you attract, source and secure the right talent for short-term success and long-term growth. Here's how we can help.
+      Looking for exceptional talent? Our specialists excel in attracting and sourcing the perfect candidates for your needs. Whether it's immediate staffing solutions or building your long-term dream team, we're here to make it happen.
     </p>
 
     <div class="space-y-4">

@@ -4,34 +4,24 @@
         <TalentAboutTalent />
         <TalentTrends25 />
         <TalentServices />
-        <TalentFAQ :faqItems="helpItems" />
         <TalentOurExperts />
         <CommonContact />
         <TalentFAQ :faqItems="faqItems" />
-        <TalentRelatedInsights />
+        <!-- <TalentRelatedInsights /> -->
     </div>
 </template>
 
 <script setup>
 
-
-const helpItems = [
+const faqItems = [
     {
         title: 'Find the right people to grow your business—anywhere in the world',
         content: 'Our global reach and extensive candidate database give you instant access to a network of diverse top talent—in any industry, any level and any location. We have experts ready to design custom solutions to meet your needs, whether recruiting executives and professionals or making direct or interim hires.'
     },
     {
         title: 'Accelerate time-to-hire',
-        content: 'We’ll simplify the hiring process with a variety of tools and technology to streamline manual tasks, so your team can focus on more strategic work and candidates get the information they need faster. Our Talent Suite provides data driven insights into the current talent market and in demand skills to help you create the right job descriptions and identify the best fit candidates quickly.  Whether you have a specific hiring need, are filling interim roles, or require an ongoing recruitment partnership, we can execute according to your timeline.'
+        content: 'We\'ll simplify the hiring process with a variety of tools and technology to streamline manual tasks, so your team can focus on more strategic work and candidates get the information they need faster. Our Talent Suite provides data driven insights into the current talent market and in demand skills to help you create the right job descriptions and identify the best fit candidates quickly.  Whether you have a specific hiring need, are filling interim roles, or require an ongoing recruitment partnership, we can execute according to your timeline.'
     },
-    {
-        title: 'Strengthen your performance',
-        content: 'We’ve used everything we know about teams, organizations and people to create Success Profiles, dynamic benchmarks that identify what traits and skills the people on your team need to help you reach your goals. We’ll assess your people so you know where their strengths and opportunities lie and where you need to hire to fill gaps. Candidates who score highly on our talent assessments are 8x more likely to be top performers, propelling your organization forward—fast.'
-    }
-]
-
-
-const faqItems = [
     {
         title: "How can talent acquisition solve your hiring challenges?",
         content: `Many organizations struggle to find candidates to fill their roles. Often, that’s because they lack a long-term hiring plan capable of adjusting to disruptions in their business and the market. But sometimes it’s because they aren’t approaching the right candidates in the right ways. They may approach hiring as a transactional process rather than as an organizational strategy.
