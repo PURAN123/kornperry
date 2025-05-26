@@ -10,7 +10,7 @@
                 class="banner-overlay absolute top-0 left-0 w-full h-full flex justify-center items-center z-10 bg-black/40">
                 <div class="text-center">
                     <h1
-                        class="text-[3rem] leading-[3.5rem] sm:text-[3rem] sm:leading-[3.5rem] lg:text-[4rem] lg:leading-[4.5rem] xl:text-[8rem] xl:leading-[9rem] font-medium text-white font-bold">
+                        class="text-[3rem] leading-[3.5rem] sm:text-[3rem] sm:leading-[3.5rem] lg:text-[4rem] lg:leading-[4.5rem] 2xl:text-[8rem] xl:leading-[9rem] font-semibold text-white font-bold">
                         Empowering Businesses </h1>
                     <p class="text-2xl font-semibold text-white px-20 mt-10">to reach their full potential. It always starts with people.</p>
                     <div class="w-auto mt-4">
