@@ -25,8 +25,8 @@ export default defineEventHandler(async (event) => {
     // Create email content
     const mailOptions = {
       from: process.env.SMTP_FROM_EMAIL,
-      to: body.email, // Where you want to receive the contact form submissions
-      replyTo: process.env.SMTP_TO_EMAIL,
+      to: process.env.SMTP_TO_EMAIL, // Where you want to receive the contact form submissions
+      replyTo: body.email,
       subject: `Contact Form Submission from ${body.firstName} ${body.lastName}`,
       html: `
         <h2>New Contact Form Submission</h2>

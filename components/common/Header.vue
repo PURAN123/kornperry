@@ -64,7 +64,7 @@ const navMenus = ref([
     { name: 'Home', path: '/' },
     { name: 'About', path: '/about' },
     { name: 'Solution', path: '/talent-acquisition' },
-    // { name: 'Role', path: '/role' },
+    { name: 'Role', path: '/role' },
     { name: 'Contact', path: '/contact' }
 ])
 

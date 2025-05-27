@@ -1,6 +1,6 @@
 <template>
     <section class="header-banner">
-        <CommonHeader classNames="sticky top-0 z-50 text-white bg-transparent" />
+        <CommonHeader classNames="max-w-[90%] mx-auto sticky top-0 z-50 text-white bg-transparent" />
         <div>
             <video class="video-background w-full h-auto object-cover" autoplay loop muted playsinline>
                 <source src="/banner-video.mp4" type="video/mp4">

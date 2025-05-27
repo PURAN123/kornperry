@@ -69,7 +69,7 @@
             </div>
 
             <!-- Footer links -->
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 gap-y-10">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8 gap-y-10">
                 <!-- Capabilities column -->
                 <div class="col-span-1">
                     <h3 class="text-lg font-bold mb-4">Capabilities</h3>
@@ -96,14 +96,14 @@
                 <div class="col-span-1">
                     <h3 class="text-lg font-bold mb-4">Careers</h3>
                     <ul class="space-y-2">
-                        <li><a href="/solutions" class="hover:text-textPrimary">Work with our Clients</a></li>
-                        <li><a href="/solutions" class="hover:text-textPrimary">Advance your Career</a></li>
-                        <li><a href="/solutions" class="hover:text-textPrimary">Join Hire Multiverse</a></li>
-                        <li><a href="/solutions" class="hover:text-textPrimary">Find an office</a></li>
-                        <li><a href="/solutions" class="hover:text-textPrimary">Business Support</a></li>
-                        <li><a href="/solutions" class="hover:text-textPrimary">EMEA Support</a></li>
-                        <li><a href="/solutions" class="hover:text-textPrimary">Investor Relations</a></li>
-                        <li><a href="/solutions" class="hover:text-textPrimary">Press Releases</a></li>
+                        <li><a href="/talent-acquisition" class="hover:text-textPrimary">Work with our Clients</a></li>
+                        <li><a href="/talent-acquisition" class="hover:text-textPrimary">Advance your Career</a></li>
+                        <li><a href="/talent-acquisition" class="hover:text-textPrimary">Join Hire Multiverse</a></li>
+                        <li><a href="/talent-acquisition" class="hover:text-textPrimary">Find an office</a></li>
+                        <li><a href="/talent-acquisition" class="hover:text-textPrimary">Business Support</a></li>
+                        <li><a href="/talent-acquisition" class="hover:text-textPrimary">EMEA Support</a></li>
+                        <li><a href="/talent-acquisition" class="hover:text-textPrimary">Investor Relations</a></li>
+                        <li><a href="/talent-acquisition" class="hover:text-textPrimary">Press Releases</a></li>
                     </ul>
                 </div>
 
@@ -113,6 +113,16 @@
                     <ul class="space-y-2">
                         <li><a href="/about" class="hover:text-textPrimary">Who We Are</a></li>
                         <li><a href="/about" class="hover:text-textPrimary">Our History</a></li>
+                    </ul>
+                </div>
+                <div class="col-span-1">
+                    <h3 class="text-lg font-bold mb-4">Contact</h3>
+                    <ul class="space-y-2">
+                        <li>Email : <a href="mailto:info@hiremultiverse.space" class="hover:text-textPrimary">info@hiremultiverse.space</a></li>
+                        <li>Phone : <a href="tel:+917983488175" class="hover:text-textPrimary">+91 7983488175</a></li>
+                        <li>Address : Meerut, Uttar Pradesh</li>
+                        <li>GSTIN : 09KCCPS1705L1Z6</li>
+
                     </ul>
                 </div>
             </div>

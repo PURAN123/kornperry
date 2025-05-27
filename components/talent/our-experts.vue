@@ -40,9 +40,9 @@
 
 const expertsRow2 = [
     {
-        name: 'Courtney Cook',
-        title: 'Senior Vice President of Global Client Solutions, Hire Multiverse RPO',
-        image: '/images/talent/expert5.webp'
+        name: 'Subhan Saifi',
+        title: 'Founder & Global Ops Head, Hire Multiverse',
+        image: '/images/talent/expert.jpg'
     }
 ]
 </script>

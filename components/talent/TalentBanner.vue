@@ -1,6 +1,6 @@
 <template>
     <section class="relative w-full overflow-hidden lg:min-h-[600px] bg-formBg">
-        <CommonHeader classNames="sticky top-0 z-50 text-white bg-transparent" />
+        <CommonHeader classNames="max-w-[90%] mx-auto sticky top-0 z-50 text-white bg-transparent" />
 
         <div class="relative flex flex-col-reverse md:flex-row max-w-7xl mx-auto py-10" >
            

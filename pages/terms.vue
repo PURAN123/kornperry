@@ -1,6 +1,6 @@
 <template>
-    <div class="min-h-screen bg-gray-50">
-        <CommonHeader classNames="sticky top-0 z-50 text-white bg-transparent" v-if="$route.path == '/contact'" />
+    <div class="min-h-screen bg-primary">
+        <CommonHeader classNames="max-w-[90%] mx-auto sticky top-0 z-50 text-white bg-transparent" />
         <!-- Header Section with improved styling -->
         <div class="bg-gradient-to-r from-primary to-primary-dark text-white py-16">
             <div class="container mx-auto px-4">
@@ -12,11 +12,11 @@
         <!-- Table of Contents - New Addition -->
         <div class="container mx-auto px-4 py-8">
             <div class="max-w-4xl mx-auto">
-                <nav class="bg-white rounded-lg shadow-sm p-6 mb-8">
-                    <h2 class="text-xl font-semibold mb-4 text-gray-800">Table of Contents</h2>
+                <nav class=" rounded-lg shadow-sm p-6 mb-8">
+                    <h2 class="text-xl font-semibold mb-4 text-white">Table of Contents</h2>
                     <ul class="space-y-2">
                         <li v-for="(section, index) in sections" :key="index">
-                            <a :href="'#section-' + (index + 1)" class="text-primary hover:text-primary-dark transition-colors duration-200 flex items-center">
+                            <a :href="'#section-' + (index + 1)" class="text-white hover:text-white-dark transition-colors duration-200 flex items-center">
                                 <span class="mr-2 text-sm font-medium">{{ index + 1 }}.</span>
                                 {{ section }}
                             </a>
@@ -27,39 +27,39 @@
         </div>
 
         <!-- Content Section with improved styling -->
-        <div class="container mx-auto px-4 pb-16">
+        <div class="container mx-auto px-4 pb-16 text-white">
             <div class="max-w-4xl mx-auto">
                 <!-- Introduction -->
-                <section id="section-1" class="mb-12 bg-white rounded-lg shadow-sm p-8 hover:shadow-md transition-shadow duration-200">
-                    <h2 class="text-3xl font-bold mb-6 text-primary">1. Introduction</h2>
-                    <p class=" leading-relaxed">
+                <section id="section-1" class="mb-12 bg-formBg rounded-lg shadow-sm p-8 hover:shadow-md transition-shadow duration-200">
+                    <h2 class="text-3xl font-bold mb-6 text-white">1. Introduction</h2>
+                    <p class=" leading-relaxed text-white">
                         Welcome to Hire Multiverse. By accessing and using our website and services, you agree to be bound by these Terms and Conditions. Please read them carefully before using our services.
                     </p>
                 </section>
 
                 <!-- Definitions -->
-                <section id="section-2" class="mb-12 bg-white rounded-lg shadow-sm p-8 hover:shadow-md transition-shadow duration-200">
-                    <h2 class="text-3xl font-bold mb-6 text-primary">2. Definitions</h2>
-                    <ul class="space-y-4">
+                <section id="section-2" class="mb-12 bg-formBg rounded-lg shadow-sm p-8 hover:shadow-md transition-shadow duration-200">
+                    <h2 class="text-3xl font-bold mb-6 text-white">2. Definitions</h2>
+                    <ul class="space-y-4 text-white">
                         <li v-for="(definition, index) in definitions" :key="index" 
-                            class="flex items-start p-4 rounded-lg bg-gray-50 hover:bg-gray-100 transition-colors duration-200">
-                            <span class="text-primary mr-3">•</span>
+                            class="flex items-start p-4 rounded-lg transition-colors duration-200">
+                            <span class="text-white mr-3">•</span>
                             <span class="">{{ definition }}</span>
                         </li>
                     </ul>
                 </section>
 
                 <!-- Services -->
-                <section id="section-3" class="mb-12 bg-white rounded-lg shadow-sm p-8 hover:shadow-md transition-shadow duration-200">
-                    <h2 class="text-3xl font-bold mb-6 text-primary">3. Services</h2>
+                <section id="section-3" class="mb-12 bg-formBg rounded-lg shadow-sm p-8 hover:shadow-md transition-shadow duration-200">
+                    <h2 class="text-3xl font-bold mb-6 text-white">3. Services</h2>
                     <p class=" mb-6 leading-relaxed">
                         Hire Multiverse provides recruitment and talent acquisition services, including but not limited to:
                     </p>
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 ">
                         <div v-for="(service, index) in services" :key="index" 
-                             class="p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors duration-200">
+                             class="p-4  rounded-lg transition-colors duration-200">
                             <span class="flex items-center ">
-                                <span class="text-primary mr-2">✓</span>
+                                <span class="text-white mr-2">✓</span>
                                 {{ service }}
                             </span>
                         </div>
@@ -67,24 +67,24 @@
                 </section>
 
                 <!-- User Obligations -->
-                <section id="section-4" class="mb-12 bg-white rounded-lg shadow-sm p-8 hover:shadow-md transition-shadow duration-200">
-                    <h2 class="text-3xl font-bold mb-6 text-primary">4. User Obligations</h2>
+                <section id="section-4" class="mb-12 bg-formBg rounded-lg shadow-sm p-8 hover:shadow-md transition-shadow duration-200">
+                    <h2 class="text-3xl font-bold mb-6 text-white">4. User Obligations</h2>
                     <p class=" mb-6 leading-relaxed">
                         Users of our Service agree to:
                     </p>
                     <div class="space-y-4">
                         <div v-for="(obligation, index) in obligations" :key="index" 
-                             class="flex items-center p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors duration-200">
-                            <span class="text-primary mr-3">⚡</span>
+                             class="flex items-center p-4  rounded-lg transition-colors duration-200">
+                            <span class="text-white mr-3">⚡</span>
                             <span class="">{{ obligation }}</span>
                         </div>
                     </div>
                 </section>
 
                 <!-- Privacy -->
-                <section id="section-5" class="mb-12 bg-white rounded-lg shadow-sm p-8 hover:shadow-md transition-shadow duration-200">
-                    <h2 class="text-3xl font-bold mb-6 text-primary">5. Privacy and Data Protection</h2>
-                    <div class="bg-blue-50 border-l-4 border-blue-500 p-6 rounded-r-lg">
+                <section id="section-5" class="mb-12 bg-formBg rounded-lg shadow-sm p-8 hover:shadow-md transition-shadow duration-200">
+                    <h2 class="text-3xl font-bold mb-6 text-white">5. Privacy and Data Protection</h2>
+                    <div class=" border-l-4 border-blue-500 p-6 rounded-r-lg">
                         <p class=" leading-relaxed">
                             We are committed to protecting your privacy. Our collection and use of personal data is governed by our Privacy Policy, which is incorporated into these Terms and Conditions by reference.
                         </p>
@@ -92,9 +92,9 @@
                 </section>
 
                 <!-- Limitation of Liability -->
-                <section id="section-6" class="mb-12 bg-white rounded-lg shadow-sm p-8 hover:shadow-md transition-shadow duration-200">
-                    <h2 class="text-3xl font-bold mb-6 text-primary">6. Limitation of Liability</h2>
-                    <div class="bg-yellow-50 border-l-4 border-yellow-500 p-6 rounded-r-lg">
+                <section id="section-6" class="mb-12 bg-formBg rounded-lg shadow-sm p-8 hover:shadow-md transition-shadow duration-200">
+                    <h2 class="text-3xl font-bold mb-6 text-white">6. Limitation of Liability</h2>
+                    <div class=" border-l-4 border-yellow-500 p-6 rounded-r-lg">
                         <p class=" leading-relaxed">
                             To the maximum extent permitted by law, Hire Multiverse shall not be liable for any indirect, incidental, special, consequential, or punitive damages, or any loss of profits or revenues.
                         </p>
@@ -102,9 +102,9 @@
                 </section>
 
                 <!-- Changes to Terms -->
-                <section id="section-7" class="mb-12 bg-white rounded-lg shadow-sm p-8 hover:shadow-md transition-shadow duration-200">
-                    <h2 class="text-3xl font-bold mb-6 text-primary">7. Changes to Terms</h2>
-                    <div class="bg-gray-50 p-6 rounded-lg">
+                <section id="section-7" class="mb-12 bg-formBg rounded-lg shadow-sm p-8 hover:shadow-md transition-shadow duration-200">
+                    <h2 class="text-3xl font-bold mb-6 text-white">7. Changes to Terms</h2>
+                    <div class=" p-6 rounded-lg">
                         <p class=" leading-relaxed">
                             We reserve the right to modify these Terms and Conditions at any time. We will notify users of any material changes through our website or via email.
                         </p>
@@ -112,19 +112,15 @@
                 </section>
 
                 <!-- Contact Information -->
-                <section id="section-8" class="bg-white rounded-lg shadow-sm p-8 hover:shadow-md transition-shadow duration-200">
-                    <h2 class="text-3xl font-bold mb-6 text-primary">8. Contact Information</h2>
+                <section id="section-8" class="bg-formBg rounded-lg shadow-sm p-8 hover:shadow-md transition-shadow duration-200">
+                    <h2 class="text-3xl font-bold mb-6 text-white">8. Contact Information</h2>
                     <p class=" mb-6 leading-relaxed">
                         If you have any questions about these Terms and Conditions, please contact us at:
                     </p>
-                    <div class="bg-gray-50 p-6 rounded-lg space-y-2">
+                    <div class=" p-6 rounded-lg space-y-2">
                         <div class="flex items-center ">
-                            <span class="text-primary mr-3">📧</span>
-                            <span>Email: <a href="mailto:contact@hiremultiverse.com" class="text-primary hover:underline">contact@hiremultiverse.com</a></span>
-                        </div>
-                        <div class="flex items-center ">
-                            <span class="text-primary mr-3">📍</span>
-                            <span>Address: [Your Company Address]</span>
+                            <span class="text-white mr-3">📧</span>
+                            <span>Email: <a href="mailto:info@hiremultiverse.com" class="text-white hover:underline">info@hiremultiverse.com</a></span>
                         </div>
                     </div>
                 </section>

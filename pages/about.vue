@@ -3,7 +3,7 @@
         <!-- Banner Section -->
         <section
             class="banner-section relative h-auto overflow-hidden min-h-[500px] before:content-[''] before:absolute before:inset-0 before:bg-black before:opacity-50">
-            <CommonHeader classNames="sticky top-0 z-50 text-white bg-transparent" />
+            <CommonHeader classNames="max-w-[90%] mx-auto sticky top-0 z-50 text-white bg-transparent" />
 
             <!-- Content -->
             <div

@@ -1,6 +1,6 @@
 <template>
     <div class="bg-formBg">
-        <CommonHeader classNames="sticky top-0 z-50 text-white bg-transparent" v-if="$route.path == '/contact'" />
+        <CommonHeader classNames="max-w-[90%] mx-auto sticky top-0 z-50 text-white bg-transparent" v-if="$route.path == '/contact'" />
         <div class=" p-8 md:p-16">
 
             <div class="mx-auto mt-5">
@@ -8,7 +8,30 @@
                     Change starts with a conversation
                 </h2>
 
-                <form @submit.prevent="submitForm" class="spaceange star-y-6">
+                <div v-if="isSubmitted" class="flex flex-col items-center justify-center min-h-[300px] space-y-6">
+                    <div class="max-w-[300px] flex flex-col items-center justify-center space-y-6">
+                        <div class="relative max-w-[300px]">
+                            <!-- Outer circle with animation -->
+                            <div
+                                class="w-20 h-20 rounded-full border-4 border-green-500 relative animate-[spin_1s_ease-in-out]">
+                                <!-- Checkmark -->
+                                <div class="absolute inset-0 flex items-center justify-center">
+                                    <svg class="w-10 h-10 text-green-500 transform origin-center scale-up-animation"
+                                        fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                                            d="M5 13l4 4L19 7" class="animate-[draw_0.5s_ease-in-out_forwards]"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-white text-center text-2xl animate-[fade-in_0.5s_ease-in-out]">
+                            Thank you for your submission! We will contact you soon.
+                        </p>
+                    </div>
+                </div>
+
+                <form v-else @submit.prevent="submitForm" class="spaceange star-y-6">
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                         <!-- First Name -->
                         <div class="space-y-2">
@@ -115,7 +138,27 @@
                     <div class="flex justify-center mt-8">
                         <button type="submit"
                             class="bg-white text-primary px-8 py-3 font-medium rounded hover:bg-gray-100 transition">
-                            Submit
+                            <div v-if="isLoading" class="py-2 px-3 flex items-center space-x-1 justify-center">
+                                <div class="w-2 h-2 bg-primary rounded-full animate-bounce" style="animation-delay: 0s"></div>
+                                <div class="w-2 h-2 bg-primary rounded-full animate-bounce" style="animation-delay: 0.2s"></div>
+                                <div class="w-2 h-2 bg-primary rounded-full animate-bounce" style="animation-delay: 0.4s"></div>
+                            </div>
+                            <div v-else class="font-medium text-xl">
+                                <span class="inline-flex items-center group">
+                                    Submit Query
+                                    <svg xmlns="http://www.w3.org/2000/svg" 
+                                         class="h-6 w-6 ml-2 transform transition-transform duration-300 ease-in-out group-hover:translate-x-2" 
+                                         fill="none" 
+                                         viewBox="0 0 24 24" 
+                                         stroke="currentColor">
+                                        <path stroke-linecap="round" 
+                                              stroke-linejoin="round" 
+                                              stroke-width="2" 
+                                              d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                                    </svg>
+                                </span>
+
+                            </div>
                         </button>
                     </div>
                 </form>
@@ -149,6 +192,7 @@ const form = ref({
     consent: false
 });
 
+const isSubmitted = ref(false);
 
 const allCountries = [
     'Afghanistan',
@@ -343,11 +387,10 @@ const allCountries = [
     'Zambia',
     'Zimbabwe'
 ];
-
-
-
+const isLoading = ref(false);
 const submitForm = async () => {
     try {
+        isLoading.value = true;
         const response = await fetch('/api/contact', {
             method: 'POST',
             headers: {
@@ -359,7 +402,7 @@ const submitForm = async () => {
         const result = await response.json();
 
         if (result.success) {
-            alert('Thank you for your submission! We will contact you soon.');
+            isSubmitted.value = true;
             // Reset form
             form.value = {
                 firstName: '',
@@ -378,17 +421,59 @@ const submitForm = async () => {
     } catch (error) {
         console.error('Error submitting form:', error);
         alert('An error occurred. Please try again later.');
+    } finally {
+        isLoading.value = false;
     }
 };
 </script>
 
 <style scoped>
-/* Add any additional custom styles here if needed */
+/* Select styles */
 select {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%23ffffff' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3e%3c/svg%3e");
     background-position: right 0.5rem center;
     background-repeat: no-repeat;
     background-size: 1.5em 1.5em;
     padding-right: 2.5rem;
+}
+
+@keyframes scale-up {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes draw {
+    0% {
+        stroke-dasharray: 0, 100;
+    }
+
+    100% {
+        stroke-dasharray: 100, 0;
+    }
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.scale-up-animation {
+    animation: scale-up 0.3s ease-in-out forwards;
+    opacity: 0;
+    transform: scale(0);
 }
 </style>

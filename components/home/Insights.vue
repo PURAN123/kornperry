@@ -5,10 +5,7 @@
             <h1 class="text-textPrimary font-bold text-5xl mt-5">Bridging the gap between Talent and Opportunity</h1>
 
             <p class="py-10">
-                Instinctly curious, we are uniquely positioned as the only organizational consulting firm focused on
-                transforming strategy, organization and talent. We combine our capabilities in Organizational Strategy,
-                Assessment and Succession, Talent Management, Leadership Development, and Total Rewards to drive
-                performance through your talent, improve your business strategy so we can help you.
+                According to 2025 Global Talent Trends, 63% of companies identify skill gaps as a major hiring barrier. Detecting these challenges early in the talent acquisition process provides critical insights into potential obstacles and helps organizations plan accordingly.
             </p>
         </div>
 
@@ -25,11 +22,11 @@
                 solve?</h2>
 
             <div class="flex justify-center items-center gap-6 flex-wrap">
-                <button class=" px-1 rounded-md py-2 border border-textPrimary px-4 hover:bg-primary hover:text-white hover:-translate-y-2 transition-all duration-300 ease-in-out">
+                <!-- <button class=" px-1 rounded-md py-2 border border-textPrimary px-4 hover:bg-primary hover:text-white hover:-translate-y-2 transition-all duration-300 ease-in-out">
                     Driving organizational change
                 </button>
                 <button class=" px-1 rounded-md py-2 border border-textPrimary px-4 hover:bg-primary hover:text-white hover:-translate-y-2 transition-all duration-300 ease-in-out">Managing talent costs</button>
-                <button class=" px-1 rounded-md py-2 border border-textPrimary px-4 hover:bg-primary hover:text-white hover:-translate-y-2 transition-all duration-300 ease-in-out">Improving sales results</button>
+                <button class=" px-1 rounded-md py-2 border border-textPrimary px-4 hover:bg-primary hover:text-white hover:-translate-y-2 transition-all duration-300 ease-in-out">Improving sales results</button> -->
                 <button class=" px-1 rounded-md py-2 border border-textPrimary px-4 hover:bg-primary hover:text-white hover:-translate-y-2 transition-all duration-300 ease-in-out">Scaling recruitment</button>
                 <button class=" px-1 rounded-md py-2 border border-textPrimary px-4 hover:bg-primary hover:text-white hover:-translate-y-2 transition-all duration-300 ease-in-out">Identifying and developing leaders</button>
                 <button class=" px-1 rounded-md py-2 border border-textPrimary px-4 hover:bg-primary hover:text-white hover:-translate-y-2 transition-all duration-300 ease-in-out">Leveraging talent data</button>
