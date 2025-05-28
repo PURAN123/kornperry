@@ -48,7 +48,7 @@
                         find people — we find your people.
 
                     </p>
-                    <p>
+                    <div>
                         From tech wizards to sales rainmakers, from design minds to strategic leaders — we've placed
                         them
                         all. But what makes us truly different is our obsession with:
@@ -57,7 +57,7 @@
                         <li>Speed without compromise</li>
                         <li>Candidate experience that mirrors your brand</li>
                     </ul>
-                    </p>
+                    </div>
                     <p>
                         We've helped companies cut time-to-hire by 30%, boost offer conversion, and build pipelines that
                         don't just fill roles — they future-proof your business.

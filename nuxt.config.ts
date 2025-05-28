@@ -8,6 +8,6 @@ export default defineNuxtConfig({
         config: {},
         viewer: true,
         exposeConfig: false,
-    }
-
+    },
+    plugins: ['~/plugins/aos.client.ts'],   
 })

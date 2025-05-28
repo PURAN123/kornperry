@@ -4,5 +4,6 @@
             <slot />
         </div>
         <CommonFooter />
+        <TawkChat />
     </div>
 </template>
