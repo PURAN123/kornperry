@@ -1,0 +1,30 @@
+{
+  "name": "nuxt-app",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "dependencies": {
+    "@emailjs/browser": "^4.4.1",
+    "@getbrevo/brevo": "^2.2.0",
+    "@sendinblue/client": "^3.3.1",
+    "@types/nodemailer": "^6.4.17",
+    "aos": "^2.3.4",
+    "buffer": "^6.0.3",
+    "inherits": "^2.0.4",
+    "nodemailer": "^7.0.3",
+    "nuxt": "^3.17.3",
+    "util": "^0.12.5",
+    "vue": "^3.5.14",
+    "vue-router": "^4.5.1"
+  },
+  "devDependencies": {
+    "@nuxtjs/tailwindcss": "^6.14.0",
+    "@types/aos": "^3.0.7"
+  }
+}
